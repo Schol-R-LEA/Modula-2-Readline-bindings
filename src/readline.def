@@ -1,0 +1,11 @@
+DEFINITION MODULE FOR "C" readline;
+
+FROM SYSTEM IMPORT ADDRESS;
+
+EXPORT UNQUALIFIED readline, add_history;
+
+PROCEDURE readline (prompt: ARRAY OF CHAR) : ADDRESS;
+
+PROCEDURE add_history (line: ARRAY OF CHAR);
+
+END readline.
